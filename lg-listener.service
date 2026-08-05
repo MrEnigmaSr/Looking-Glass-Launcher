@@ -1,0 +1,10 @@
+[Unit]
+Description=Looking Glass auto-launch on VM start
+
+[Service]
+ExecStart=%h/.local/bin/lg-listener.sh
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target
